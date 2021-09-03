@@ -4,20 +4,21 @@
 
 }
 .reserviaLogo {
-  width: 95px;
-  height: 30px;
+  width: 190px;
+  height: 60px;
   margin-left: 20px;
   margin-top: 30px;
  
 }
 
 .signup-link {
-    
+  font-size: 30px; 
+  
   font-weight: bold;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   color: #0065fc;
-  
+  padding-top: 15px;
   margin-right: 20px;
   margin-top: 30px;
 }
@@ -33,7 +34,7 @@
   display: flex;
   
   list-style-type: none;
-  margin:0;
+  margin:0px;
   padding: 0px;
   margin-top: 75px;
   font-weight: bold;
@@ -44,13 +45,240 @@
 }
 
 .hebergement-list{
+    font-size: 20px;
      flex-grow: 1;
      text-align: center;
-     border-bottom:1px solid #f2f2f2;
+     border-bottom:3px solid #f2f2f2;
+     padding-bottom: 10px;
 
 }
 .hebergement-list:hover{
-    border-bottom:1px solid #0065fc;
+    border-bottom:3px solid #0065fc;
+    color:#0065fc;
 
-}  
+} 
+
+.hebergement-list:active{
+  border-bottom:3px solid #0065fc;
+  color:#0065fc;
+    
+}
+
+.hebergement-link{
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  
+}
+
+.activités-link{
+
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+}
+
+.title-header{
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  margin-right: 65px;
+  
+
+
+}
+
+.h2-header{
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  margin-right: 65px;
+  margin-left: 10px;
+
+}
+
+.searchbar{
+   display: flex;
+  width: 90%;
+  height: 50px;
+  margin-left: 32px;
+  border:solid  1px #F2F2F2 ;
+  
+  justify-content: space-between;
+  border-radius: 15px 15px 15px 15px;
+  
+  
+  
+
+}
+.localisation-icon{
+  
+   background-color: #F2F2F2;
+   width: 50px;
+   display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+    
+    
+  
+   
+
+}
+
+.btn-search{
+ background-color: #0065fc;
+ border-radius: 0px 15px 15px 0px;
+ border:0px;
+ width: 50px;
+ 
+ 
+ 
+}
+
+ .fa-search{
+  color: white;
+  padding: 0px;
+ 
+}
+
+.search-imput{
+  border: 0px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  display:flex;
+  flex-grow: 2;
+  text-align: center;
+}
+
+.filter-list{
+  list-style: none;
+}
+
+.economic-button{
+  display: flex;
+  width: 5;
+  border:solid  1px #F2F2F2 ;
+  border-radius: 15px 15px 15px 15px;
+  background-color: white;
+  justify-content: space-between;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+
+  
+}
+
+
+.money-icon{
+  color: #0065fc;
+  background-color: #deebff;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 15px 15px;
+
+}
+
+.filter-list{
+  max-width: 640px;
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 250px 250px;
+}
+
+.first-elements{
+  width: 250px;
+  height: 50px;
+
+}
+.family-button{
+  display: flex;
+  width: 5;
+  border:solid  1px #F2F2F2 ;
+  border-radius: 15px 15px 15px 15px;
+  background-color: white;
+  justify-content: space-between;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+}
+
+.family-icon{
+  color: #0065fc;
+  background-color: #deebff;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 15px 15px;
+
+}
+
+.romantic-button{
+  display: flex;
+  width: 5;
+  border:solid  1px #F2F2F2 ;
+  border-radius: 15px 15px 15px 15px;
+  background-color: white;
+  justify-content: space-between;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+
+}
+
+.heart-icon{
+
+  color: #0065fc;
+  background-color: #deebff;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 15px 15px;
+
+}
+
+.animals-button{
+  display: flex;
+  width: 5;
+  border:solid  1px #F2F2F2 ;
+  border-radius: 15px 15px 15px 15px;
+  background-color: white;
+  justify-content: space-between;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+}
+
+.dog-icon{
+  color: #0065fc;
+  background-color: #deebff;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 15px 15px;
+
+}
+
+.info{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info-icon{
+  border:solid  1px #F2F2F2 ;
+  border-radius: 50%;
+  color: #0065fc;
+
+
+}
+.informations{
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  width: 290px;
+}
 

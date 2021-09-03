@@ -18,39 +18,41 @@
         <a href="#" class="signup-link">S'inscrire</a>
         <ul class="first-list" >
             
-            <li class="hebergement-list">Hébergements</li>
-            <li class ="hebergement-list">Activités</li>
+            <li class="hebergement-list"><a class="hebergement-link" href="#hebergements">Hébergements</a></li>
+            <li class ="hebergement-list"><a  class ="activités-link" href="#activités">Activités</a></li>
             
         </li>
     </nav>
 
     <header>
         <div>
-            <h1>Trouvez votre hébergement pour des vacances de reves</h1>
-            <h4>En plein centre ville ou en pleine nature</h4>
+            <h1 class ="title-header">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h2 class="h2-header">En plein centre ville ou en pleine nature</h4>
         </div>
         <div class="searchbar">
-            <span>  <i></i> </span>
-            <input type="text" value="Marseille, France">
-            <input type="submit" value="Rechercher" name="Search" id="">
+            <div class="localisation-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <input type="text" value="Marseille, France" class="search-imput">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
         </div>
         <div class="filters">
-            <li>
-                <ul>Filtres </ul>
-                <ul> <i></i> <button class="filter-button">Economique</button> </ul>
-                <ul> <i></i> <button class="filter-button">Familial</button> </ul>
-                <ul> <i></i> <button class="filter-button">Romantique</button> </ul>
-                <ul> <i></i> <button class="filter-button">Animaux autorisés</button> </ul>
-            </li>
+            <ul class="filter-list">
+                <li >Filtres </li>
+                
+                <li>  <button class="economic-button"> <div class="money-icon"><i class="fas fa-money-bill-wave"></i></div> Economique</button>  </li>
+                <li>  <button class="family-button"> <div class="family-icon"><i class="fas fa-child"></i></div>Familial</button> </li>
+                
+                <li>  <button class="romantic-button"> <div class ="heart-icon"><i class="fas fa-heart"></i></div>Romantique</button> </li>
+                <li>  <button class="animals-button"><div class="dog-icon"><i class="fas fa-dog"></i></div> Animaux autorisés</button> </li>
+            </ul>
         </div>
-        <div class="">
-            <i></i>
-            <h4>Plus de 500 logements sont disponibles dans cette ville</h4>
+        <div class="info">
+           <div class ="info-icon"> <i class="fas fa-info"></i></div>
+            <h4 class="informations">Plus de 500 logements sont disponibles dans cette ville</h4>
         </div>
     </header>
     <section class="hebergements">
         <div class="hebergement-list">
-            <h1>Hébergements à Marseille</h1>
+            <h1 id="hébergements">Hébergements à Marseille</h1>
             <li>
                 <ul>
                     <div class="hebergement-card">
@@ -136,7 +138,7 @@
 
     </section>
     <section class="activites">
-        <h1>Activités à Marseille</h1>
+        <h1 id="activités">Activités à Marseille</h1>
         <li>
             <ul>
                 <div class="activity-card">
@@ -195,4 +197,5 @@
         </li>
     </footer>
 </body>
+<script src="https://kit.fontawesome.com/b8365aa815.js" crossorigin="anonymous"></script>
 </html>
