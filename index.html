@@ -1,201 +1,259 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    
+
     <title>Reservia</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <img class="reserviaLogo" src="assets/images/logo/Reservia@3x.png" alt="Reservia logo">
-        <div class="spacer"></div>
-        <a href="#" class="signup-link">S'inscrire</a>
-        <ul class="first-list" >
-            
-            <li class="hebergement-list"><a class="hebergement-link" href="#hebergements">Hébergements</a></li>
-            <li class ="hebergement-list"><a  class ="activités-link" href="#activités">Activités</a></li>
-            
+      <img
+        class="reserviaLogo"
+        src="assets/images/logo/Reservia@3x.png"
+        alt="Reservia logo"
+      />
+      <div class="spacer"></div>
+      <a href="#" class="signup-link">S'inscrire</a>
+      <ul class="first-list">
+        <li class="hebergement-list">
+          <a class="hebergement-link" href="#hebergements">Hébergements</a>
         </li>
+        <li class="hebergement-list">
+          <a class="activités-link" href="#activités">Activités</a>
+        </li>
+      </ul>
     </nav>
 
     <header>
-        <div>
-            <h1 class ="title-header">Trouvez votre hébergement pour des vacances de rêve</h1>
-            <h2 class="h2-header">En plein centre ville ou en pleine nature</h4>
+      <div>
+        <h1 class="title-header">
+          Trouvez votre hébergement pour des vacances de rêve
+        </h1>
+        <p class="p-header">En plein centre ville ou en pleine nature</p>
+      </div>
+      <div class="searchbar">
+        <div class="localisation-icon">
+          <i class="fas fa-map-marker-alt"></i>
         </div>
-        <div class="searchbar">
-            <div class="localisation-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <input type="text" value="Marseille, France" class="search-imput">
-            <button class="btn-search"><i class="fas fa-search"></i></button>
-        </div>
-        <div class="filters">
-            <ul class="filter-list">
-                <li >Filtres </li>
-                
-                <li>  <button class="economic-button"> <div class="money-icon"><i class="fas fa-money-bill-wave"></i></div> Economique</button>  </li>
-                <li>  <button class="family-button"> <div class="family-icon"><i class="fas fa-child"></i></div>Familial</button> </li>
-                
-                <li>  <button class="romantic-button"> <div class ="heart-icon"><i class="fas fa-heart"></i></div>Romantique</button> </li>
-                <li>  <button class="animals-button"><div class="dog-icon"><i class="fas fa-dog"></i></div> Animaux autorisés</button> </li>
-            </ul>
-        </div>
-        <div class="info">
-           <div class ="info-icon"> <i class="fas fa-info"></i></div>
-            <h4 class="informations">Plus de 500 logements sont disponibles dans cette ville</h4>
-        </div>
+        <input type="text" value="Marseille, France" class="search-imput" />
+        <button class="btn-search"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="filters">
+        <ul class="filter-list">
+          <li class="filter-title">Filtres</li>
+
+          <li>
+            <button class="economic-button">
+              <div class="filter-icon">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              
+             <div class="filter-text">Economique</div>
+            </button>
+          </li>
+          <li>
+            <button class="family-button">
+              <div class="filter-icon"><i class="fas fa-child"></i></div>
+              <div class="filter-text">Familial</div>
+            </button>
+          </li>
+
+          <li>
+            <button class="romantic-button">
+              <div class="filter-icon"><i class="fas fa-heart"></i></div>
+              <div class="filter-text">Romantique</div>
+            </button>
+          </li>
+          <li>
+            <button class="animals-button">
+              <div class="filter-icon"><i class="fas fa-dog"></i></div>
+              <div class="filter-text">Animaux autorisés</div>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <div class="info-icon"><i class="fas fa-info"></i></div>
+        <p class="informations">
+          Plus de 500 logements sont disponibles dans cette ville
+        </p>
+      </div>
     </header>
     <section class="hebergements">
-        <div class="hebergement-list">
-            <h1 id="hébergements">Hébergements à Marseille</h1>
-            <li>
-                <ul>
-                    <div class="hebergement-card">
-                        <img src="" alt="card-img">
-                        <h5 class="card-title">Auberge la Cannebière</h5>
-                        <p class="card-description">Nuit à partir de <strong>25</strong></p>
-                        <span class="star-4"></span>
-                    </div>
-                </ul>
-                <ul>
-                    <div class="hebergement-card">
-                        <img src="" alt="card-img">
-                        <h5 class="card-title">Hotel du port</h5>
-                        <p class="card-description">Nuit à partir de <strong>52</strong></p>
-                        <span class="star-5"></span>
-                    </div>
-                </ul>
-                <ul>
-                    <div class="hebergement-card">
-                        <img src="" alt="card-img">
-                        <h5 class="card-title">Hotel les mouettes</h5>
-                        <p class="card-description">Nuit à partir de <strong>76</strong></p>
-                        <span class="star-4"></span>
-                    </div>
-                </ul>
-                <ul>
-                    <div class="hebergement-card">
-                        <img src="" alt="card-img">
-                        <h5 class="card-title">Hotel de la mer</h5>
-                        <p class="card-description">Nuit à partir de <strong>46</strong></p>
-                        <span class="star-3"></span>
-                    </div>
-                </ul>
-                <ul>
-                    <div class="hebergement-card">
-                        <img src="" alt="card-img">
-                        <h5 class="card-title">Auberge Le Panier</h5>
-                        <p class="card-description">Nuit à partir de <strong>23</strong></p>
-                        <span class="star-4"></span>
-                    </div>
-                </ul>
-                <ul>
-                    <div class="hebergement-card">
-                        <img src="" alt="card-img">
-                        <h5 class="card-title">Hotel chez Amina</h5>
-                        <p class="card-description">Nuit à partir de <strong>96</strong></p>
-                        <span class="star-5"></span>
-                    </div>
-                </ul>
-            </li>
-            <button class="more">Afficher plus</button>
-        </div>
-        <div class="most-popular">
-            <h1>Les plus populaires</h1>
-            <i></i>
-            <li>
-                <ul>
-                    <div class="popular-card">
-                        <img src="" alt="card-img">
-                        <h5 class="card-title">Hotel le soleil du matin</h5>
-                        <p class="card-description">Nuit à partir de <strong>128</strong></p>
-                        <span class="star-5"></span>
-                    </div>
-                </ul>
-                <ul>
-                    <div class="popular-card">
-                        <img src="" alt="card-img">
-                        <h5 class="card-title">Au coeur de l'eau Chambre d'hotes</h5>
-                        <p class="card-description">Nuit à partir de <strong>71</strong></p>
-                        <span class="star-4"></span>
-                    </div>
-                </ul>
-                <ul>
-                    <div class="popular-card">
-                        <img src="" alt="card-img">
-                        <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
-                        <p class="card-description">Nuit à partir de <strong>68</strong></p>
-                        <span class="star-4"></span>
-                    </div>
-                </ul>
-            </li>
-        </div>
-
+      <div class="hebergement-list">
+        <h1 id="hébergements">Hébergements à Marseille</h1>
+        <ul>
+          <li>
+            <div class="hebergement-card">
+              <img src="" alt="card-img" />
+              <h5 class="card-title">Auberge la Cannebière</h5>
+              <p class="card-description">
+                Nuit à partir de <strong>25</strong>
+              </p>
+              <span class="star-4"></span>
+            </div>
+          </li>
+          <li>
+            <div class="hebergement-card">
+              <img src="" alt="card-img" />
+              <h5 class="card-title">Hotel du port</h5>
+              <p class="card-description">
+                Nuit à partir de <strong>52</strong>
+              </p>
+              <span class="star-5"></span>
+            </div>
+          </li>
+          <li>
+            <div class="hebergement-card">
+              <img src="" alt="card-img" />
+              <h5 class="card-title">Hotel les mouettes</h5>
+              <p class="card-description">
+                Nuit à partir de <strong>76</strong>
+              </p>
+              <span class="star-4"></span>
+            </div>
+          </li>
+          <li>
+            <div class="hebergement-card">
+              <img src="" alt="card-img" />
+              <h5 class="card-title">Hotel de la mer</h5>
+              <p class="card-description">
+                Nuit à partir de <strong>46</strong>
+              </p>
+              <span class="star-3"></span>
+            </div>
+          </li>
+          <li>
+            <div class="hebergement-card">
+              <img src="" alt="card-img" />
+              <h5 class="card-title">Auberge Le Panier</h5>
+              <p class="card-description">
+                Nuit à partir de <strong>23</strong>
+              </p>
+              <span class="star-4"></span>
+            </div>
+          </li>
+          <li>
+            <div class="hebergement-card">
+              <img src="" alt="card-img" />
+              <h5 class="card-title">Hotel chez Amina</h5>
+              <p class="card-description">
+                Nuit à partir de <strong>96</strong>
+              </p>
+              <span class="star-5"></span>
+            </div>
+          </li>
+        </ul>
+        <button class="more">Afficher plus</button>
+      </div>
+      <div class="most-popular">
+        <h1>Les plus populaires</h1>
+        <i></i>
+        <ul>
+          <li>
+            <div class="popular-card">
+              <img src="" alt="card-img" />
+              <h5 class="card-title">Hotel le soleil du matin</h5>
+              <p class="card-description">
+                Nuit à partir de <strong>128</strong>
+              </p>
+              <span class="star-5"></span>
+            </div>
+          </li>
+          <li>
+            <div class="popular-card">
+              <img src="" alt="card-img" />
+              <h5 class="card-title">Au coeur de l'eau Chambre d'hotes</h5>
+              <p class="card-description">
+                Nuit à partir de <strong>71</strong>
+              </p>
+              <span class="star-4"></span>
+            </div>
+          </li>
+          <li>
+            <div class="popular-card">
+              <img src="" alt="card-img" />
+              <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
+              <p class="card-description">
+                Nuit à partir de <strong>68</strong>
+              </p>
+              <span class="star-4"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="activites">
-        <h1 id="activités">Activités à Marseille</h1>
+      <h1 id="activités">Activités à Marseille</h1>
+      <ul>
         <li>
-            <ul>
-                <div class="activity-card">
-                    <img src="" alt="">
-                    <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
-                </div>
-            </ul>
-            <ul>
-                <div class="activity-card">
-                    <img src="" alt="">
-                    <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
-                </div>
-            </ul>
-            <ul>
-                <div class="activity-card">
-                    <img src="" alt="">
-                    <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
-                </div>
-            </ul>
-            <ul>
-                <div class="activity-card">
-                    <img src="" alt="">
-                    <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
-                </div>
-            </ul>
-            <ul>
-                <div class="activity-card">
-                    <img src="" alt="">
-                    <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
-                </div>
-            </ul>
-            <ul>
-                <div class="activity-card">
-                    <img src="" alt="">
-                    <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
-                </div>
-            </ul>
+          <div class="activity-card">
+            <img src="" alt="" />
+            <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
+          </div>
         </li>
+        <li>
+          <div class="activity-card">
+            <img src="" alt="" />
+            <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
+          </div>
+        </li>
+        <li>
+          <div class="activity-card">
+            <img src="" alt="" />
+            <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
+          </div>
+        </li>
+        <li>
+          <div class="activity-card">
+            <img src="" alt="" />
+            <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
+          </div>
+        </li>
+        <li>
+          <div class="activity-card">
+            <img src="" alt="" />
+            <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
+          </div>
+        </li>
+        <li>
+          <div class="activity-card">
+            <img src="" alt="" />
+            <h5 class="card-title">Hotel Tout bleu et Blanc</h5>
+          </div>
+        </li>
+      </ul>
     </section>
     <footer>
-        <li>
-            <ul class="">A propos</ul>
-            <ul>Fonctionnement du site</ul>
-            <ul>Conditions générales de vente</ul>
-            <ul>Données et confidentialité</ul>
-        </li>
-        <li>
-            <ul class="">Nos hébergements</ul>
-            <ul>Charte qualité</ul>
-            <ul>Soumettre votre hotel</ul>
-        </li>
-        <li>
-            <ul class="">Assistance</ul>
-            <ul>Centre d'aide</ul>
-            <ul>Nous contacter</ul>
-        </li>
+      <ul class="footer-list">
+        <li class="footer-list-title">A propos</li>
+        <li class="footer-list-element">Fonctionnement du site</li>
+        <li class="footer-list-element">Conditions générales de vente</li>
+        <li class="footer-list-element">Données et confidentialité</li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-list-title">Nos hébergements</li>
+        <li class="footer-list-element">Charte qualité</li>
+        <li class="footer-list-element">Soumettre votre hotel</li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-list-title">Assistance</li>
+        <li class="footer-list-element">Centre d'aide</li>
+        <li class="footer-list-element">Nous contacter</li>
+      </ul>
     </footer>
-</body>
-<script src="https://kit.fontawesome.com/b8365aa815.js" crossorigin="anonymous"></script>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/b8365aa815.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
