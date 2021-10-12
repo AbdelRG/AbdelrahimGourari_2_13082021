@@ -1,8 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
-
 
 .navbar {
   display: flex;
@@ -50,58 +58,59 @@ body {
   font-size: 20px;
   flex-grow: 1;
   text-align: center;
-  
-  
+
   margin-top: 0px;
 }
 
-
 .hebergement-link {
   text-decoration: none;
-  
+
   color: #000000;
   padding-bottom: 10px;
   flex-grow: 1;
   border-bottom: 3px solid #f2f2f2;
 }
 .hebergement-link:hover {
-  border-color:  #0065fc;
+  border-color: #0065fc;
   color: #0065fc;
   text-decoration: none;
 }
 
 .title-header {
   font-weight: bolder;
-  width: 100%;
+
   margin-right: 65px;
   margin-left: 20px;
-  font-size: 30px;
+  font-size: 23px;
   margin-top: 40px;
 }
 
 .p-header {
-  width: 100%;
   margin-right: 65px;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 17px;
   margin-top: 20px;
 }
 
 .searchbar {
   display: flex;
-  width: 95%;
+
   height: 50px;
   margin-left: 20px;
-  margin-right: 10px;
+  margin-right: 20px;
   border: solid 1px #f2f2f2;
   margin-top: 40px;
   margin-bottom: 36px;
   justify-content: space-between;
   border-radius: 15px 15px 15px 15px;
 }
+.search {
+  display: none;
+}
 .localisation-icon {
   background-color: #f2f2f2;
   width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,7 +122,8 @@ body {
   border-radius: 15px 15px 15px 15px;
   border: 0px;
   width: 50px;
-  
+  height: 50px;
+  cursor: pointer;
 }
 
 .fa-search {
@@ -125,19 +135,19 @@ body {
   border: 0px;
 
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 20px;
   display: flex;
   flex-grow: 2;
-  text-align: center;
+  padding-left: 17px;
 }
 
 .filter-list {
   list-style: none;
   margin-left: 0;
+  padding-left: 20px;
 }
 
-
-.filter-text{
+.filter-text {
   padding: 12px;
 }
 
@@ -150,36 +160,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-
-
 
 .filter-button {
   display: flex;
-  
+
   border: solid 2px #f2f2f2;
   border-radius: 500px;
   background-color: white;
-  
+
   height: 50px;
   font-size: 20px;
   margin-bottom: 12px;
   align-items: center;
   padding: 0px;
-  margin-right: 10px ;
-
+  margin-right: 10px;
+  cursor: pointer;
   font-weight: bolder;
 }
-
-
 
 .info {
   display: flex;
   margin-left: 20px;
   align-items: baseline;
   padding-right: 20px;
-
 }
 
 .info-icon {
@@ -190,13 +194,11 @@ body {
   align-items: center;
   height: 6px;
   padding: 10px;
-
-  
 }
 .informations {
- 
-  margin-left: 20px;
-  width: 75%;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 40px;
 }
 
 .filter-list {
@@ -209,165 +211,437 @@ body {
   font-weight: bold;
   margin-bottom: 18px;
 }
-.footer{
+.footer {
   background-color: #f2f2f2;
   padding-top: 33px;
-  
 }
-.footer-list{
+.footer-list {
   list-style-type: none;
-  
 }
 
-.footer-list-title{
+.footer-list-title {
   font-weight: bold;
   padding-bottom: 23px;
-  
 }
-.footer-list-element{
+.footer-list-element {
   padding-bottom: 15px;
 }
 
-.most-popular{
-
+.most-popular {
   background-color: #f2f2f2;
-
 }
 
-.most-popular-title{
-  display:flex;
+.most-popular-title {
+  display: flex;
   justify-content: space-between;
-  
 }
-.fa-chart-line{
+.fa-chart-line {
   margin-top: 40px;
   margin-right: 20px;
   font-size: 25px;
 }
 
-.most-popular-h1{
+.most-popular-h1 {
   margin-top: 40px;
-  margin-left: 21px;
+  margin-left: 38px;
 }
 
-.popular-img{
-  width:127px;
-  height: 130px ;
+.popular-img {
+  width: 127px;
+  height: 130px;
   border-radius: 15px 0px 0px 15px;
   margin-top: 5px;
   margin-left: 5px;
+  object-fit: cover;
 }
-.popular-figure{
+.popular-figure {
   display: flex;
   background-color: white;
-  width: 95%;
-  margin-left: 0;
-  margin-right: 10px;
+
+  margin-left: 0px;
+  margin-right: 20px;
   border-radius: 15px 15px 15px 15px;
-  height: 140px;
-  
+  min-height: 140px;
 }
-.popular-list{
+.popular-list {
   list-style-type: none;
-  margin: 0;
+
+  padding-bottom: 37px;
+  margin-left: 0px;
 }
 
-.popular-fig-desc{
+.popular-fig-desc {
   margin-left: 21px;
   font-size: 12px;
-  
-  
 }
-.star-5{
-
+.star-5 {
   font-size: 12px;
   color: #0065fc;
-  
-
+  padding-bottom: 10px;
 }
-.card-title{
+.card-title {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 20px;
-  
+  padding-bottom: 0px;
 }
-.card-description{
+.card-description {
   margin-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
-.star-4{
+.star-4 {
   display: flex;
+  padding-bottom: 10px;
 }
-.blue-star{
+.blue-star {
   font-size: 12px;
   color: #0065fc;
 }
-.grey-star{
+.grey-star {
   font-size: 12px;
   color: #d9d9d9;
 }
 
-.hebergement-figure{
-  
+.hebergement-figure {
   background-color: white;
   width: 95%;
   margin-left: 0;
   margin-right: 10px;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 1px 1px 1px 1px black ;
-  height: 260px;
-  
+  box-shadow: 1px 1px 20px 1px silver;
+  min-height: 200px;
 }
 
-.hebergement-img{
-  width: 95%;
-  height: 144px ;
+.hebergement-img {
+  object-fit: cover;
+  width: 97%;
+  height: 144px;
   border-radius: 15px 15px 0px 0px;
   margin-top: 5px;
   margin-left: 5px;
 }
-.hebergement-list3{
+.hebergement-list3 {
   list-style-type: none;
+  padding-left: 15px;
+  margin-bottom: 40px;
 }
-
-.hebergement-fig-desc{
-font-size: 12px;
-margin-left: 16px;
+.hebergement-list2 {
+  margin-bottom: 35px;
 }
-.hébergement-title{
+.hebergement-fig-desc {
+  font-size: 12px;
+  margin-left: 16px;
+}
+.hebergement-card-desc {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.hebergement-card-title {
+  margin-top: 12px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.hébergement-title {
   margin-left: 20px;
 }
 
-.more-link{
+.more-link {
   font-weight: bold;
   color: #000000;
   text-decoration: none;
   margin-left: 20px;
+  margin-bottom: 40px;
 }
 
-.activity-title{
+.activity-title {
   margin-left: 20px;
 }
 
-.activity-list{
+.activity-list {
   list-style-type: none;
+  padding-left: 15px;
 }
 
-.activity-figure{
-  
+.activity-figure {
   background-color: white;
   width: 95%;
   margin-left: 0;
   margin-right: 10px;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 1px 1px 1px 1px black ;
-  height: 200px;
-  
+  box-shadow: 1px 1px 20px 1px silver;
+  min-height: 190px;
 }
-.activity-img{
+.activity-figure1 {
+  background-color: white;
+  width: 95%;
+  margin-left: 0;
+  margin-right: 10px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 1px 1px 20px 1px silver;
+  min-height: 190px;
+}
+.activity-figure2 {
+  background-color: white;
+  width: 95%;
+  margin-left: 0;
+  margin-right: 10px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 1px 1px 20px 1px silver;
+  min-height: 190px;
+}
+.activity-figure3 {
+  background-color: white;
+  width: 95%;
+  margin-left: 0;
+  margin-right: 10px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 1px 1px 20px 1px silver;
+  min-height: 190px;
+}
+
+.activity-img2 {
   width: 100%;
-  height: 144px ;
+  height: 144px;
   border-radius: 15px 15px 0px 0px;
-  
+  object-fit: cover;
+}
+.activity-img3 {
+  width: 100%;
+  height: 144px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+.activity-img1 {
+  width: 100%;
+  height: 144px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+.activity-img {
+  width: 100%;
+  height: 144px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+.activity-card-title {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin: 0px;
+}
+
+@media all and (min-width: 1024px) and (max-width: 2500px) {
+  .reserviaLogo {
+    width: 95px;
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+
+  .navbar {
+    display: flex;
+  }
+  .signup-link {
+    order: 5;
+    padding: 53px 50px 0px 34px;
+    font-size: 16px;
+    margin: 0px;
+  }
+  .first-list {
+    width: auto;
+
+    margin-top: 0px;
+    align-items: stretch;
+  }
+  .hebergement-link {
+    border-bottom: 0px;
+    border-top: 3px solid white;
+    padding: 50px 34px 0px 34px;
+
+    text-align: center;
+    font-size: 16px;
+  }
+  .title-header {
+    margin-left: 50px;
+  }
+  .p-header {
+    margin-left: 50px;
+  }
+  .searchbar {
+    width: 40%;
+    margin-left: 50px;
+  }
+  .search-icon {
+    display: none;
+  }
+  .search {
+    display: block;
+    color: white;
+  }
+  .btn-search {
+    width: auto;
+    border-radius: 0px 15px 15px 0px;
+    padding: 18px;
+  }
+  .filter-list {
+    align-items: baseline;
+  }
+  .filter-title {
+    width: auto;
+
+    margin-right: 30px;
+    margin-left: 40px;
+  }
+  .info {
+    margin-left: 50px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-list {
+    margin-right: 250px;
+  }
+  .hebergements {
+    display: flex;
+
+    margin-bottom: 60px;
+    justify-content: space-evenly;
+  }
+  .most-popular {
+    order: 2;
+    width: 33%;
+    border-radius: 15px;
+    max-width: 420px;
+  }
+  .popular-list {
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+  }
+  .popular-figure {
+    margin-bottom: 30px;
+    max-width: 370px;
+  }
+  .hébergement-title {
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  .hebergement-list2 {
+    width: 60%;
+
+    background-color: #f2f2f2;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+    border-radius: 15px;
+  }
+  .hebergement-list3 {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    margin-bottom: 40px;
+  }
+  .hebergement-figure {
+    width: 246px;
+  }
+  .hebergement-figure-list {
+    margin-right: 30px;
+  }
+
+  .more-link {
+    margin-left: 50px;
+  }
+  .activites {
+    margin-bottom: 60px;
+  }
+  .activity-title {
+    margin-left: 70px;
+  }
+  .activity-list {
+    display: flex;
+    column-count: 4;
+    margin-left: 50px;
+    margin-right: 20px;
+    justify-content: space-evenly;
+  }
+  .activity-figure {
+    background-color: white;
+    width: 95%;
+    max-width: 300px;
+    margin-left: 0;
+    margin-right: 10px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 20px 1px silver;
+    min-height: 190px;
+    margin-bottom: 40px;
+  }
+  .activity-figure1 {
+    background-color: white;
+    width: 95%;
+    margin-left: 0;
+    margin-right: 10px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 20px 1px silver;
+    min-height: 445px;
+    max-width: 300px;
+  }
+  .activity-figure2 {
+    background-color: white;
+    width: 95%;
+    max-width: 300px;
+    margin-left: 0;
+    margin-right: 10px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 20px 1px silver;
+    min-height: 235px;
+    margin-bottom: 40px;
+  }
+  .activity-figure3 {
+    background-color: white;
+    width: 95%;
+    max-width: 300px;
+    margin-left: 0;
+    margin-right: 10px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 20px 1px silver;
+    min-height: 160px;
+    max-height: 161px;
+    margin-bottom: 40px;
+  }
+
+  .activity-img1 {
+    min-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .activity-img2 {
+    min-height: 180px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .activity-img3 {
+    max-height: 110px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .first-activity {
+    margin-right: 40px;
+  }
+
+  .second-activity {
+    margin-right: 40px;
+  }
+
+  .fourth-activity {
+    margin-right: 40px;
+  }
 }
