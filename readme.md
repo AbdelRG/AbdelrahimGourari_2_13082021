@@ -1,7 +1,7 @@
-# OpenDeclic P2 : Intégrer la maquette du site d'une agence web
+# Projet d'intégration réservia : Intégrer la maquette du site d'une agence web
 
-**Version hébergée**: https://abdelrg.github.io/projet-integration/
+**Version hébergée**: https://abdelrg.github.io/AbdelrahimGourari_2_13082021/
 
-**Presentation**: 
+**Presentation**:
 
-**Code source**: https://github.com/AbdelRG/projet-integration
+**Code source**: https://github.com/AbdelRG/AbdelrahimGourari_2_13082021

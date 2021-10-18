@@ -178,6 +178,9 @@ body {
   cursor: pointer;
   font-weight: bolder;
 }
+.filter-button:hover {
+  opacity: 0.5;
+}
 
 .info {
   display: flex;
@@ -245,7 +248,10 @@ body {
   margin-top: 40px;
   margin-left: 38px;
 }
-
+.fig-link {
+  text-decoration: none;
+  color: #000000;
+}
 .popular-img {
   width: 127px;
   height: 130px;
@@ -431,7 +437,7 @@ body {
   margin: 0px;
 }
 
-@media all and (min-width: 1024px) and (max-width: 2500px) {
+@media all and (min-width: 1200px) and (max-width: 2500px) {
   .reserviaLogo {
     width: 95px;
     height: 60px;
