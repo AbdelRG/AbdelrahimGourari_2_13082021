@@ -7,7 +7,7 @@ presentation:
   controls: true
   progress: true
   history: true
-  embedded: true
+
   mouseWheel: true
 ---
 
